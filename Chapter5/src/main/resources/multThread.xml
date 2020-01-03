@@ -17,7 +17,7 @@ thread-count：代表最大并发线程数
 xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
 -->
 
-<suite name="thread" parallel="classs" thread-count="2">
+<suite name="thread" parallel="methods" thread-count="2">
     <test name="mult">
         <classes>
             <class name="com.course.testng.multThread.MultThreadOnXml"/>

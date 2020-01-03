@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 /*
 * 方法分组执行测试
 * */
-public class GroupOnMethod {
+    public class GroupOnMethod {
 
     @Test(groups = "server")
     public void test1(){

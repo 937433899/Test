@@ -1,0 +1,40 @@
+[
+  {
+    "description": "带cookies信息的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies":{
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "需要携带cookies信息才能访问的请求",
+      "headers":
+      {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "带cookies信息的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "LS",
+        "age": "33"
+      },
+      "response": {
+        "status": 200,
+        "json": {
+          "LS": "success",
+          "status": 1
+        }
+      }
+    }
+  }
+
+]
